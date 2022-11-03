@@ -11,11 +11,13 @@ const chalk = require('chalk')
 // Website Api
 global.APIs = {
 	zenz: 'https://zenzapis.xyz',
+	alpha: 'https://alphabot-api.herokuapp.com/api',
 }
 
 // Apikey Website Api
 global.APIKeys = {
 	'https://zenzapis.xyz': '41bc1ac82bf9',
+	'https://alphabot-api.herokuapp.com/api': 'xElukpMH',
 }
 
 // Other
@@ -28,7 +30,7 @@ global.sessionName = 'nazedev'  //jangan diganti bro nanti error
 global.jumlha = '999'
 global.jumhal = '100000000000000'
 global.jumlah = '1000000000'
-global.prefa = ['','!','.','#','&']
+global.prefa = ['','!','.','#','&','/']
 global.sp = ''
 
 // Setting Mess

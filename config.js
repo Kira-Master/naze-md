@@ -12,12 +12,14 @@ const chalk = require('chalk')
 global.APIs = {
 	zenz: 'https://zenzapis.xyz',
 	alpha: 'https://alphabot-api.herokuapp.com/api',
+	fax: 'https://fax-home.herokuapp.com/api',
 }
 
 // Apikey Website Api
 global.APIKeys = {
 	'https://zenzapis.xyz': '41bc1ac82bf9',
 	'https://alphabot-api.herokuapp.com/api': 'xElukpMH',
+	'https://fax-home.herokuapp.com/api': '92u1a7pr8s',
 }
 
 // Other

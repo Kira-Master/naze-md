@@ -2271,6 +2271,7 @@ break
 		}
 	    }
 	    break
+			
 	    case 'emojimix2': {
 	    if (!text) throw `Example : ${prefix + command} 😅`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(text)}`)
@@ -2604,6 +2605,13 @@ break
                 naze.sendMessage(m.chat, { image: buffer, caption: `Random Waifu`, footer: nyoutube}, { quoted: m })
             }
             break
+		case 'hentai': case 'ahegao': case 'cum': case 'blowjob': case 'neko': case 'pussy': {
+			m.reply(mess.wait)
+			anu = await fetchJson(`https://fax-home.herokuapp.com/api/nsfw/${command}?apikey=92u1a7pr8s`)
+			buffer = await getBuffer(anu.result.url)
+			naze.sendMessage(m.chat, { image: buffer, caption: `_NAJIS CABUL_`, footer: nyoutube}, {quoted: m })
+		}
+			break
 	    case 'couple': {
                 m.reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')

@@ -2558,7 +2558,8 @@ break
             }
             break
 			case 'ytmp4': case 'ytvideo': {
-				m.reply('FITUR SEDANG DALAM PERBAIKAN')
+				m.reply('FITUR SEDANG DALAM PERBAIKAN\nCOBA GUNAKAN YTMP42')
+			}
 				break
 			
 	    case 'getmusic': {
